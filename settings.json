@@ -1,0 +1,53 @@
+{
+    "editor.tokenColorCustomizations": {
+    "[CodeSandbox]": {
+      "textMateRules": [
+        {
+          "scope": ["entity.name.tag"],
+          "settings": { "foreground": "#ff6188" }
+        },
+        {
+          "scope": [
+            "entity.name.tag.js.jsx support.class.component.js.jsx",
+            "entity.name.tag support.class.component",
+            "source.vue support.class.component"
+          ],
+          "settings": { "foreground": "#59D6AB", "fontStyle": "italic" },
+        },
+          {
+        "scope": [
+          //following will be in italic (=FlottFlott)
+          "comment",
+          "entity.name.type.class", //class names
+          "keyword", //import, export, return…
+          "storage.modifier", //static keyword
+          "storage.type", //class keyword
+          "support.class.builtin",
+          "keyword.control",
+          "constant.language",
+          "entity.other.attribute-name",
+          "entity.name.method",
+          "entity.name.function"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          //following will be excluded from italics (VSCode has some defaults for italics)
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json"
+        ],
+        "settings": {
+          "fontStyle": ""
+          }
+        }
+      ]
+    },
+  },
+}
